@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+      content="Bountiful Foods main page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter&family=Kalam&family=Lato&display=swap">
+    <link rel="stylesheet" href="style/small.css" />
+    <link rel="stylesheet" href="style/medium.css" />
+    <link rel="stylesheet" href="style/large.css" />
+    <title>Bountiful Foods - Home Page</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div>
+          <!-- Logo Image -->
+          <div>
+            <h1>Bountiful</h1>
+            <h2>Foods</h2>
+          </div>
+        </div>
+        <div>
+          <nav>
+            <button id="hamburgerBtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="fresh.html">Fresh</a></li>
+              <li class="active"><a href="about.html">About Us</a></li>
+            </ul>
+          </nav>
+          <div class="social_media">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="images/393277_facebook_icon.webp"
+                alt="Facebook icon"
+                width="40px"
+                height="40px"
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><img
+                class="linkedin"
+                src="images/1233018_linkedin_icon.webp"
+                alt="Linkedin Icon"
+                width="40px"
+                height="40px"
+            /></a>
+            <a href=""><img src="" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span id="current_date"></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- 
+      Nav / Contact Info
+      Summary Info
+      Call to action > Fresh page
+      Weather Card 
+      Number of drinks submitted 
+      -->
+    </main>
+
+    <footer>
+      <div>
+        <!-- Logo Image -->
+        <div>
+          <h2>Bountiful Foods</h2>
+          <address>Carlsbad Blvd, Carlsbad, CA 92008</address>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>www.website.com</p>
+          <p>(999) 999-9999</p>
+        </div>
+        <div>
+          <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
+            target="_blank">🗺️ Map Location</a></p>
+          <br>
+          <p><a href="https://openweathermap.org">🌧 Locale Weather ☀️</a></p>
+        </div>
+      </div>
+      <p>
+        &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230 Final Project | Last Update: <span id="lastupdate"></span>
+      </p>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
