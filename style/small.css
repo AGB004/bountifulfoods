@@ -1,3 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+li,
+address {
+  font-family: "Averia Serif Libre", "Kalam", cursive;
+}
+
+p,
+span {
+  font-family: "Inter", "Lato", sans-serif;
+}
+
 html {
   background-color: #4caf50;
 }
@@ -6,16 +23,31 @@ body {
   padding: 1em;
   max-width: 1400px;
   margin: 0 auto;
-  
 }
 
+header {
+  margin: 0 auto;
+}
 header,
 footer {
-  background-color: rgb(255, 182, 193);
+  background-color: #ffb6c1;
+}
+
+img.logo {
+  border-radius: 2rem;
+}
+
+img {
+    border-radius: 2rem;
 }
 
 main {
-background-color: rgb(255, 220, 226);
+  background-color: rgb(255, 220, 226);
+  margin: 1.5rem auto;
+}
+
+.active {
+    background-color: rgb(193, 126, 255);
 }
 
 nav {
@@ -64,7 +96,7 @@ nav ul li {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #6dd7f7;
 }
 
 .dropdown:hover .dropdown-content {
