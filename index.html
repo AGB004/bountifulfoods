@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-      content="Bountiful Foods main page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways" />
+    <meta
+      name="description"
+      content="Bountiful Foods main page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways"
+    />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter&family=Kalam&family=Lato&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter&family=Kalam&family=Lato&display=swap"
+    />
     <link rel="stylesheet" href="style/small.css" />
     <link rel="stylesheet" href="style/medium.css" />
     <link rel="stylesheet" href="style/large.css" />
@@ -25,11 +33,11 @@
           </div>
         </div>
         <div>
-          <nav>
-            <button id="hamburgerBtn">
-              <span>&#9776;</span><span>X</span>
+          <nav class="dropdown">
+            <button class="dropbtn">
+              <span>&#9776;</span>
             </button>
-            <ul id="primaryNav">
+            <ul id="primaryNav" class="dropdown-content">
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="fresh.html">Fresh</a></li>
               <li><a href="about.html">About Us</a></li>
@@ -39,7 +47,7 @@
             <a href="https://www.facebook.com" target="_blank"
               ><img
                 src="images/393277_facebook_icon.webp"
-                alt="Facebook icon"
+                alt="Facebook Icon"
                 width="40px"
                 height="40px"
             /></a>
@@ -51,7 +59,7 @@
                 width="40px"
                 height="40px"
             /></a>
-            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt="Youtube Icon" /></a>
           </div>
         </div>
       </div>
@@ -62,12 +70,32 @@
 
     <main>
       <!-- 
-      Nav / Contact Info
-      Summary Info
+      Nav / Contact Info ^
+      Summary Info 
       Call to action > Fresh page
       Weather Card 
       Number of drinks submitted 
       -->
+      <div class="banner">
+        <h1>Enjoy Bountiful Foods!</h1>
+        <picture>
+          <source media="(min-width: 60em)" srcset="#" />
+          <source media="(min-width: 35.5em)" srcset="#" />
+          <img src="#" alt="#" />
+        </picture>
+        <button><a href="fresh.html">Create a drink here!</a></button>
+      </div>
+      <div class="summary">
+        <h2>Welcome!</h2>
+        <p>
+          We are a compnay located on the coast of southern California focusing
+          on making fresh fruit drinks for all our customers. We love allowing
+          our costerms to pick the fruits of their choosing, creating vast
+          selection and possibilities for everyone!
+        </p>
+      </div>
+      <div class="weather">Weather</div>
+      <div class="drinks">Drinks</div>
     </main>
 
     <footer>
@@ -84,14 +112,20 @@
           <p>(999) 999-9999</p>
         </div>
         <div>
-          <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
-            target="_blank">🗺️ Map Location</a></p>
-          <br>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
+              target="_blank"
+              >🗺️ Map Location</a
+            >
+          </p>
+          <br />
           <p><a href="https://openweathermap.org">🌧 Locale Weather ☀️</a></p>
         </div>
       </div>
       <p>
-        &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230 Final Project | Last Update: <span id="lastupdate"></span>
+        &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230
+        Final Project | Last Update: <span id="lastupdate"></span>
       </p>
     </footer>
 
