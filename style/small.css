@@ -33,6 +33,16 @@ footer {
   background-color: #ffb6c1;
 }
 
+header, main, footer {
+    padding: 20px;
+}
+
+.headerTop {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 img.logo {
   border-radius: 2rem;
 }
