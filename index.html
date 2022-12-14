@@ -8,7 +8,7 @@
       name="description"
       content="Bountiful Foods main page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways"
     />
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -83,19 +83,29 @@
           <source media="(min-width: 35.5em)" srcset="#" />
           <img src="#" alt="#" />
         </picture>
-        <button><a href="fresh.html">Create a drink here!</a></button>
+        <button><a href="fresh.html">Create A Drink Here!</a></button>
       </div>
       <div class="summary">
         <h2>Welcome!</h2>
         <p>
           We are a compnay located on the coast of southern California focusing
-          on making fresh fruit drinks for all our customers. We love allowing
-          our costerms to pick the fruits of their choosing, creating vast
-          selection and possibilities for everyone!
+          on making fresh fruit drinks for all of our customers. We love allowing
+          our costerms to pick the fruits of their choosing to create vast
+          selections and possibilities for everyone!
         </p>
       </div>
-      <div class="weather">Weather</div>
-      <div class="drinks">Drinks</div>
+      <div class="weather">
+        <h2>Locale Weather</h2>
+        <img src="" alt="" id="weather-icon" />
+        <p><span id="current-temp"></span></p>
+        <p><span id="icon_description"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind Speed: <span id="windSpeed"></span></p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+      </div>
+      <div class="drinks">
+        Number drinks created:<span id="drinks"></span>
+      </div>
     </main>
 
     <footer>
@@ -130,5 +140,6 @@
     </footer>
 
     <script src="script/script.js"></script>
+    <script src="script/windchill.js"></script>
   </body>
 </html>
