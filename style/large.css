@@ -20,4 +20,8 @@
   .dropdown-content {
     position: relative;
   }
+
+  .dropdown {
+    display: block;
+  }
 }
