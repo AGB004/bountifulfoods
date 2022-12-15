@@ -1,4 +1,4 @@
-// const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+const url1 = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 const url = "json/fruit.json";
 
 let dropdown1 = document.querySelector(".options1");
@@ -19,7 +19,7 @@ dropdown2.selectedIndex = 0;
 dropdown3.add(defaultOption3);
 dropdown3.selectedIndex = 0;
 
-fetch(url).then(function (response) {
+fetch(url1).then(function (response) {
   response.json().then(function (data) {
     let option;
 
