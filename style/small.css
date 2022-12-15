@@ -47,7 +47,7 @@ footer {
 footer {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
@@ -281,7 +281,7 @@ form label input:required:valid {
 
 .map {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -291,6 +291,8 @@ div.aboutMap {
 }
 
 iframe {
+  width: 100%;
+  height: auto;
   border-radius: .5rem;
   box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
 }
