@@ -84,6 +84,21 @@ img {
 padding-top: 20px;
 }
 
+main.index {
+  text-align: center;
+}
+
+main.fresh div#fruits{
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+div#fruits div {
+  background-color: rgb(190, 247, 164);
+  border: 1px solid #555;
+}
+
 main {
   background-color: rgb(255, 220, 226);
   margin: 1.5rem auto;
@@ -101,7 +116,20 @@ main div {
 div.banner img {
   width: 100%;
   height: auto;
-  border-radius: 0;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
+}
+
+div.banner button {
+  margin: 1rem auto;
+  padding: 10px;
+  background-color: rgb(190, 247, 164);
+  border: 1px solid #555;
+  border-radius: .5rem;
+}
+
+div.banner a {
+  color: black;
 }
 
 a {

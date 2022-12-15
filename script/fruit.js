@@ -1,4 +1,5 @@
-const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+// const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+const url = "json/fruit.json";
 
 let dropdown1 = document.querySelector(".options1");
 let dropdown2 = document.querySelector(".options2");
@@ -68,19 +69,22 @@ fetch(url)
       let nutri = document.createElement("ul");
       let carbs = document.createElement("li");
       let pro = document.createElement("li");
+      let fat = document.createElement("li");
       let cal = document.createElement("li");
       let sug = document.createElement("li");
 
       h2.textContent = fruit.name;
-      carbs.textContent = fruit.carbohydrates;
-      pro.textContent = fruit.protein;
-      cal.textContent = fruit.calories;
-      sug.textContent = fruit.sugar;
+      carbs.textContent = `Carbs: ${fruit.nutritions.carbohydrates}`;
+      pro.textContent = `Protein: ${fruit.nutritions.protein}`;
+      fat.textContent = `Fat: ${fruit.nutritions.fat}`;
+      cal.textContent = `Cal: ${fruit.nutritions.calories}`;
+      sug.textContent = `Sugar: ${fruit.nutritions.sugar}`;
 
       card.appendChild(h2);
-      nutri.appendChild(carbs);
-      nutri.appendChild(pro);
       nutri.appendChild(cal);
+      nutri.appendChild(carbs);
+      nutri.appendChild(fat);
+      nutri.appendChild(pro);
       nutri.appendChild(sug);
       card.appendChild(nutri);
 
