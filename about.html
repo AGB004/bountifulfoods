@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-      content="Bountiful Foods about page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways" />
+    <meta
+      name="description"
+      content="Bountiful Foods about page for Alec Byington in WDD 230: Web Frontend Development course at Brigham Young University - Idaho through Pathways"
+    />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter&family=Kalam&family=Lato&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Inter&family=Kalam&family=Lato&display=swap"
+    />
     <link rel="stylesheet" href="style/small.css" />
     <link rel="stylesheet" href="style/medium.css" />
     <link rel="stylesheet" href="style/large.css" />
@@ -17,13 +25,41 @@
   <body>
     <header>
       <div>
+        <div class="socialMedia">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/393277_facebook_icon.webp"
+              alt="Facebook icon"
+              width="40px"
+              height="40px"
+          /></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><img
+              class="linkedin"
+              src="images/1233018_linkedin_icon.webp"
+              alt="Linkedin Icon"
+              width="40px"
+              height="40px"
+          /></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><img
+              src="images/3225180_youtube_icon.webp"
+              alt="Youtube Icon"
+              width="40px"
+              height="40px"
+          /></a>
+        </div>
         <div class="headerTop">
-          <img class="logo" src="images/bountiful_foods_logo.webp" alt="company logo image">
+          <img
+            class="logo"
+            src="images/bountiful_foods_logo.webp"
+            alt="company logo image"
+          />
           <div>
             <h1>Bountiful Foods 🍓</h1>
           </div>
         </div>
-        <div>
+        <div class="navBox">
           <nav class="dropdown">
             <button class="dropbtn">
               <span>&#9776;</span>
@@ -35,29 +71,9 @@
               <li><a href="reference.html">References</a></li>
             </ul>
           </nav>
-          <div class="social_media">
-            <a href="https://www.facebook.com" target="_blank"
-              ><img
-                src="images/393277_facebook_icon.webp"
-                alt="Facebook icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.linkedin.com" target="_blank"
-              ><img
-                class="linkedin"
-                src="images/1233018_linkedin_icon.webp"
-                alt="Linkedin Icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="images/3225180_youtube_icon.webp" alt="Youtube Icon" width="40px" height="40px"/></a>
-          </div>
         </div>
       </div>
-      <div>
-        Today is <span id="current_date"></span>
-      </div>
+      <div class="date">Today is <span id="current_date"></span></div>
     </header>
 
     <main>
@@ -67,43 +83,81 @@
       Google Map ^
       Form 
       -->
-      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.86080965433!2d-117.287802!3d33.12151955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1671006827416!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-      <div class="form_container">
-        <form method="get" action="#">
-          <fieldset>
-            <legend>Contact Form</legend>
-            <label class="#"
-              >First Name* <input type="text" name="fname" required
-            /></label>
+      <div class="history">
+        <h2>Company Mission</h2>
+        <p>
+          We are a small business specializing in organic, locally grown foods.
+          We have been helping to bring fresh healthy food options for those
+          locally and in surrounding areas.
+        </p>
+        <h2>Area Info</h2>
+        <p>
+          This area has been well known for its beautiful beaches, great
+          climate, and lots of great places for the whole family to enjoy.
+        </p>
+      </div>
+      <div class="map">
+        <div class="aboutMap">
+          <h2>Located: Carlsbad Blvd, Carlsbad, CA 92008</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.86080965433!2d-117.287802!3d33.12151955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1671006827416!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="form_container aboutMap">
+          <form method="get" action="#">
+            <fieldset>
+              <legend>Contact Form</legend>
+              <label class="#"
+                >First Name* <input type="text" name="fname" required
+              /></label>
 
-            <label class="#"
-              >Last Name* <input type="text" name="lname" required
-            /></label>
+              <label class="#"
+                >Last Name* <input type="text" name="lname" required
+              /></label>
 
-            <label class="#"
-              >Email* <input type="email" name="email" placeholder="your_email@email.com" required
-            /></label>
+              <label class="#"
+                >Email*
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your_email@email.com"
+                  required
+              /></label>
 
-            <label class="#"
-              >Phone Number
-              <input type="tel" name="phone" placeholder="123-555-6789"
-            /></label>
+              <label class="#"
+                >Phone Number
+                <input type="tel" name="phone" placeholder="123-555-6789"
+              /></label>
 
-            <label class="#"
-              >Questions or Comments: <input type="text" name="description" required
-            /></label>
+              <label class="#"
+                >Questions or Comments:
+                <input type="text" name="description" required
+              /></label>
+            </fieldset>
 
-          </fieldset>
-
-          <input type="submit" value="Send Question / Comment" class="submitBtn" />
-          
-        </form>
+            <input
+              type="submit"
+              value="Send Question / Comment"
+              class="submitBtn"
+            />
+          </form>
+        </div>
       </div>
     </main>
 
     <footer>
       <div>
-        <img class="logo" src="images/bountiful_foods_logo.webp" alt="company logo image">
+        <img
+          class="logo"
+          src="images/bountiful_foods_logo.webp"
+          alt="company logo image"
+        />
         <div>
           <h2>Bountiful Foods</h2>
           <address>Carlsbad Blvd, Carlsbad, CA 92008</address>
@@ -115,14 +169,20 @@
           <p>(999) 999-9999</p>
         </div>
         <div>
-          <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
-            target="_blank">🗺️ Map Location</a></p>
-          <br>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
+              target="_blank"
+              >🗺️ Map Location</a
+            >
+          </p>
+          <br />
           <p><a href="https://openweathermap.org">🌧 Locale Weather ☀️</a></p>
         </div>
       </div>
       <p>
-        &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230 Final Project | Last Update: <span id="lastupdate"></span>
+        &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230
+        Final Project | Last Update: <span id="lastupdate"></span>
       </p>
     </footer>
 

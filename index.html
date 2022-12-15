@@ -24,6 +24,24 @@
   </head>
   <body>
     <header>
+      <div class="socialMedia">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img
+            src="images/393277_facebook_icon.webp"
+            alt="Facebook Icon"
+            width="40px"
+            height="40px"
+        /></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><img
+            class="linkedin"
+            src="images/1233018_linkedin_icon.webp"
+            alt="Linkedin Icon"
+            width="40px"
+            height="40px"
+        /></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="images/3225180_youtube_icon.webp" alt="Youtube Icon" width="40px" height="40px"/></a>
+      </div>
       <div>
         <div class="headerTop">
           <img class="logo" src="images/bountiful_foods_logo.webp" alt="company logo image">
@@ -31,7 +49,7 @@
             <h1>Bountiful Foods 🍓</h1>
           </div>
         </div>
-        <div>
+        <div class="navBox">
           <nav class="dropdown">
             <button class="dropbtn">
               <span>&#9776;</span>
@@ -43,27 +61,9 @@
               <li><a href="reference.html">References</a></li>
             </ul>
           </nav>
-          <div class="social_media">
-            <a href="https://www.facebook.com" target="_blank"
-              ><img
-                src="images/393277_facebook_icon.webp"
-                alt="Facebook Icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.linkedin.com" target="_blank"
-              ><img
-                class="linkedin"
-                src="images/1233018_linkedin_icon.webp"
-                alt="Linkedin Icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="images/3225180_youtube_icon.webp" alt="Youtube Icon" width="40px" height="40px"/></a>
-          </div>
         </div>
       </div>
-      <div>
+      <div class="date">
         Today is <span id="current_date"></span>
       </div>
     </header>
@@ -78,11 +78,7 @@
       -->
       <div class="banner">
         <h1>Enjoy Bountiful Foods!</h1>
-        <picture>
-          <source media="(min-width: 60em)" srcset="#" />
-          <source media="(min-width: 35.5em)" srcset="#" />
-          <img src="#" alt="#" />
-        </picture>
+        <img src="images/beautiful-tropical-beach-sea-with-chair-blue-sky-crop-6x2.webp" alt="chairs on a beach" />
         <button><a href="fresh.html">Create A Drink Here!</a></button>
       </div>
       <div class="summary">
@@ -104,34 +100,26 @@
         <p>Wind Chill: <span id="windChill"></span></p>
       </div>
       <div class="drinks">
-        Number drinks created:<span id="drinks"></span>
+        <h3>Number drinks created:<span id="drinks"></span></h3>
       </div>
     </main>
 
     <footer>
       <div>
         <img class="logo" src="images/bountiful_foods_logo.webp" alt="company logo image">
-        <div>
-          <h2>Bountiful Foods</h2>
-          <address>Carlsbad Blvd, Carlsbad, CA 92008</address>
-        </div>
+        <h2>Bountiful Foods</h2>
       </div>
       <div>
-        <div>
-          <p>www.website.com</p>
-          <p>(999) 999-9999</p>
-        </div>
-        <div>
-          <p>
-            <a
-              href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
-              target="_blank"
-              >🗺️ Map Location</a
-            >
-          </p>
-          <br />
-          <p><a href="https://openweathermap.org">🌧 Locale Weather ☀️</a></p>
-        </div>
+        <address>Carlsbad Blvd, Carlsbad, CA 92008</address>
+        <p>www.bountifulfoods.com</p>
+        <p>(999) 999-9999</p>
+      </div>
+      <div>
+        <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215865,-117.3228214,13z/data=!3m1!4b1!4m5!3m4!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.158095!4d-117.3505926?hl=en"
+            target="_blank"
+            >🗺️ Map Location</a
+          >
+        <p><a href="https://openweathermap.org">🌧 Locale Weather ☀️</a></p>
       </div>
       <p>
         &copy; <span id="year"></span> Bouniful Foods | Alec Byington | WDD 230

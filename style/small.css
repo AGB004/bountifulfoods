@@ -6,7 +6,7 @@ h5,
 h6,
 button,
 li,
-address {
+address, a {
   font-family: "Averia Serif Libre", "Kalam", cursive;
 }
 
@@ -27,7 +27,10 @@ body {
 
 header {
   margin: 0 auto;
+  text-align: center;
+  position: relative;
 }
+
 header,
 footer {
   background-color: #ffb6c1;
@@ -37,12 +40,36 @@ header,
 main,
 footer {
   padding: 20px;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
+}
+
+footer {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+footer p {
+   grid-column: 1/4;
+}
+
+.socialMedia {
+  position: absolute;
+  bottom: 4rem;
+  right: .5rem;
 }
 
 .headerTop {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.headerMiddle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 img.logo {
@@ -53,13 +80,40 @@ img {
   border-radius: 2rem;
 }
 
+.date {
+padding-top: 20px;
+}
+
 main {
   background-color: rgb(255, 220, 226);
   margin: 1.5rem auto;
+  display: grid;
+  gap: 20px;
+}
+
+main div {
+  background-color: #ffb6c1;
+  box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
+  padding: 10px;
+  border-radius: .5rem;
+}
+
+div.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .active {
   background-color: rgb(193, 126, 255);
+}
+
+.navBox {
+  display: flex;
 }
 
 nav {
@@ -96,6 +150,7 @@ nav ul li {
 .dropdown-content {
   display: none;
   position: absolute;
+  left: .1rem;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -190,4 +245,24 @@ form label input:required {
 
 form label input:required:valid {
   border-left: green solid 6px;
+}
+
+.history {
+  text-align: center;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+div.aboutMap {
+  box-shadow: none;
+  border-radius: none;
+}
+
+iframe {
+  border-radius: .5rem;
+  box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
 }

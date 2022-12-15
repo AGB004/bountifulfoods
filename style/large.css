@@ -1,27 +1,3 @@
 @media only screen and (min-width: 60em) {
-  nav button {
-    display: none;
-  }
-
-  ul#primaryNav {
-    display: flex;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
-  li {
-    flex: 1 1 auto;
-  }
-
-  nav ul li a {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: larger;
-  }
-
-  .dropdown-content {
-    position: relative;
-  }
-
-  .dropdown {
-    display: block;
-  }
+  
 }

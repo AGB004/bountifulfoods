@@ -17,13 +17,31 @@
   <body>
     <header>
       <div>
+        <div class="socialMedia">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="images/393277_facebook_icon.webp"
+              alt="Facebook icon"
+              width="40px"
+              height="40px"
+          /></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><img
+              class="linkedin"
+              src="images/1233018_linkedin_icon.webp"
+              alt="Linkedin Icon"
+              width="40px"
+              height="40px"
+          /></a>
+          <a href="https://www.youtube.com" target="_blank"><img src="images/3225180_youtube_icon.webp" alt="Youtube Icon" width="40px" height="40px"/></a>
+        </div>
         <div class="headerTop">
           <img class="logo" src="images/bountiful_foods_logo.webp" alt="company logo image">
           <div>
             <h1>Bountiful Foods 🍓</h1>
           </div>
         </div>
-        <div>
+        <div class="navBox">
           <nav class="dropdown">
             <button class="dropbtn">
               <span>&#9776;</span>
@@ -35,27 +53,9 @@
               <li><a href="reference.html">References</a></li>
             </ul>
           </nav>
-          <div class="social_media">
-            <a href="https://www.facebook.com" target="_blank"
-              ><img
-                src="images/393277_facebook_icon.webp"
-                alt="Facebook icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.linkedin.com" target="_blank"
-              ><img
-                class="linkedin"
-                src="images/1233018_linkedin_icon.webp"
-                alt="Linkedin Icon"
-                width="40px"
-                height="40px"
-            /></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="images/3225180_youtube_icon.webp" alt="Youtube Icon" width="40px" height="40px"/></a>
-          </div>
         </div>
       </div>
-      <div>
+      <div class="date">
         Today is <span id="current_date"></span>
       </div>
     </header>
@@ -72,6 +72,35 @@
       -->
       <h1>Fruit Options</h1>
       <div id="fruits" class="#"></div>
+      <div class="form_container">
+        <form method="get" action="#">
+          <fieldset>
+            <legend>Contact Form</legend>
+            <label class="#"
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label class="#"
+              >Email* <input type="email" name="email" placeholder="your_email@email.com" required
+            /></label>
+            <label class="#"
+              >Phone Number*
+              <input type="tel" name="phone" placeholder="123-555-6789" required
+            /></label>
+            <label class="#"
+              >Fruit 1*
+              <select class="options1"></select>
+            </label>
+            <label class="#"
+              >Fruit 2*
+              <select class="options2"></select>
+            </label>
+            <label class="#"
+              >Fruit 3*
+              <select class="options3"></select> 
+            </label>
+          </fieldset>
+          <input type="submit" value="Create Drink!" class="submitBtn" onclick="test()"/>
+        </form>
     </main>
 
     <footer>
