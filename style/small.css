@@ -123,7 +123,6 @@ div.banner img {
 div.banner button {
   margin: 1rem auto;
   padding: 10px;
-  background-color: rgb(190, 247, 164);
   border: 1px solid #555;
   border-radius: .5rem;
 }
@@ -248,9 +247,9 @@ form label.sbs input {
   margin-right: 0.5rem;
 }
 
-form input.submitBtn {
+form input.submitBtn, button {
   border: none;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(190, 247, 164);
   color: black;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -294,4 +293,9 @@ iframe {
   width: 100%;
   border-radius: .5rem;
   box-shadow: 5px 5px 5px 2px rgb(85, 85, 85, .90);
+}
+
+option {
+  background-color: rgb(255, 220, 226);
+  color: black;
 }
