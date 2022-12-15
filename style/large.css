@@ -18,7 +18,12 @@
   .map {
     grid-template-columns: 1fr 1fr;
   }
+  
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  footer p {
+    grid-column: 1/4;
+ }
 }

@@ -52,7 +52,7 @@ footer {
 }
 
 footer p {
-   grid-column: 1/4;
+   grid-column: 1/2;
 }
 
 .socialMedia {
@@ -90,7 +90,7 @@ main.index {
 
 main.fresh div#fruits{
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 10px;
 }
 
