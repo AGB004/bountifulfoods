@@ -1,12 +1,11 @@
-const cards = document.querySelector('.cards');
 
 fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
   .then(function (response) {
     return response.json();
   })
-  .then(function (data) {
-    console.table(data);  // temporary checking for valid response and data parsing
-    const fruits = data['fruits'];
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const fruits = jsonObject['fruits'];
     fruits.forEach(displayFruits);
   });
 
